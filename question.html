@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>萌獸學院-隨堂測驗</title>
+    <!-- Firebase App is always required and must be first -->
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+    <!-- Add additional services that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-storage.js"></script>
+
+    <script src="js/jquery2.js"></script>
+    <link rel="stylesheet" href="css/questionstyle.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/headerfooter.css">
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+    <script src="js/jQuery.js"></script>
+    <script src="js/scroll.js"></script>
+    <!-- <script src="js/script.js"></script> -->
+    <script src="js/fuction.js"></script>
+
+    <script src="js/QA.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.8/lottie.js"></script>
+    <script src="./js/animation.js"></script>
+
+
+</head>
+
+
+<body>
+    <div class="main">
+        <header>
+            <div class="header-layout">
+                <div class="header-logo">
+                    <img src="img/logorec5.png" width="300" height="70">
+                </div>
+                <!-- <a href="quiz.html"> -->
+                <!-- <button class="leavebutton">X 離開</button> -->
+                <input type="button" value="X 離開" class="leavebutton" onclick="msg()">
+                </a>
+                <script>
+                    function msg() {
+                        var r = confirm("確定不作答離開嗎？");
+                        if (r == true) {
+                            location.href='quiz.html';
+                        }
+                        else {
+                            return false;
+                        }
+                    }
+                </script>
+            </div>
+
+        </header>
+        <article>
+
+            <div class="questiontitle">
+                <img src="img/quizing.png">
+
+            </div>
+            <!-- <input type="text" class="nametext" placeholder="請輸入暱稱" id="name-field"> -->
+
+            <div class="question-layout">
+                <div class="q4 page1">
+                    <div class="qtitle">1.台灣黑熊的胸前有著白色、英文字母形狀的鬃毛，請問是什麼英文字母？</div>
+                    <div class="q4-layout ">
+                        
+                        <div class="ans-layout4">
+                            <!-- <form action="js/script.js" method="get"> -->
+                            <div class="ans"><input type="radio" name="q1" value="1" id="q1_a1"><label
+                                    for="q1_a1">&emsp;W</label></div>
+                            <div class="ans"><input type="radio" name="q1" value="2" id="q1_a2"><label
+                                    for="q1_a2">&emsp;V</label></div>
+                            <div class="ans"><input type="radio" name="q1" value="3" id="q1_a3"><label
+                                    for="q1_a3">&emsp;Y</label></div>
+                            <div class="ans"><input type="radio" name="q1" value="4" id="q1_a4"><label
+                                    for="q1_a4">&emsp;N</label></div>
+                            <!-- </form> -->
+                        </div>
+                        <img src="img/熊讚.png" class="page1">
+                    </div>
+
+                    
+                </div>
+                <div class="q4 page2">
+                    <div class="qtitle">2.下列關於黑嘴端鳳頭燕鷗的敘述何者正確？</div>
+                    <div class="q4-layout">
+                        
+                        <div class="ans-layout4">
+                            <!-- <form action="js/script.js" method="get"> -->
+                            <div class="ans"><input type="radio" name="q2" value="1" id="q2_a1"><label
+                                    for="q2_a1">&emsp;鳥喙上帶有黑色</label></div>
+                            <div class="ans"><input type="radio" name="q2" value="2" id="q2_a2"><label
+                                    for="q2_a2">&emsp;又稱「神話之鳥」</label></div>
+                            <div class="ans"><input type="radio" name="q2" value="3" id="q2_a3"><label
+                                    for="q2_a3">&emsp;是馬祖的縣鳥</label></div>
+                            <div class="ans"><input type="radio" name="q2" value="4" id="q2_a4"><label
+                                    for="q2_a4">&emsp;以上皆是</label></div>
+                            <!-- </form> -->
+                        </div>
+                         <img src="img/黑嘴端鳳頭燕鷗單.png" class="page2">
+                    </div>
+
+                   
+                </div>
+                <div class="q3 page3">
+                    <div class="q3-layout">
+                        <div class="qtitle">3.「萌獸學院」的教授中，誰擁有「媽祖魚」的稱號？</div>
+                        <!-- <form action="js/script.js" method="get"> -->
+                        <div class="ans-layout3">
+                            <div class="ans3"><input type="radio" name="q3" value="1" id="q3-a1">
+                                <label for="q3-a1">
+                                    <div>&emsp;伯蒂紅</div><img src="img/紅尾伯勞final.png">
+                                </label></div>
+                            <div class="ans3"><input type="radio" name="q3" value="2" id="q3-a2">
+                                <label for="q3-a2">
+                                    <div>&emsp;海迪生</div><img src="img/白海豚final.png">
+                                </label></div>
+                            <div class="ans3"><input type="radio" name="q3" value="3" id="q3-a3">
+                                <label for="q3-a3">
+                                    <div>&emsp;山迪沃荷</div><img src="img/穿山甲final.png">
+                                </label></div>
+                            <div class="ans3"><input type="radio" name="q3" value="4" id="q3-a4">
+                                <label for="q3-a4">
+                                    <div>&emsp;黑歐鳳</div><img src="img/黑嘴端鳳頭燕鷗final.png">
+                                </label></div>
+                        </div>
+                        <!-- </form> -->
+                    </div>
+
+                </div>
+                <div class="q4 page4">
+
+                    <div class="qtitle">4.「台灣穿山甲」目前面臨的最大危機是獵捕與棲息地破壞，下列何者不是其被獵捕的理由？</div>
+                    <div class="q4-layout">
+                        <div class="ans-layout4">
+                            <!-- <form action="js/script.js" method="get"> -->
+                            <div class="ans"><input type="radio" name="q4" value="1" id="q4-a1"><label
+                                    for="q4-a1">&emsp;藥方迷信</label></div>
+                            <div class="ans"><input type="radio" name="q4" value="2" id="q4-a2"><label
+                                    for="q4-a2">&emsp;食補</label></div>
+                            <div class="ans"><input type="radio" name="q4" value="3" id="q4-a3"><label
+                                    for="q4-a3">&emsp;很會畫畫</label></div>
+                            <!-- <div class="ans"><input type="hidden" name="q4" value="4" id="q4-a3"></div> -->
+                            <!-- </form> -->
+                        </div>
+
+                        <img src="img/穿山甲單.png">
+                    </div>
+                </div>
+                <div class="q5 page5">
+
+                    <div class="qtitle">5.石虎屬於夜行性動物</div>
+                    <div class="q5-layout">
+                        <div class="ans-layout5">
+                            <!-- <form action="js/script.js" method="get"> -->
+                            <div class="ans"><input type="radio" name="q5" value="1" id="q5-a1"><label
+                                    for="q5-a1">&emsp;O</label></div>
+                            <div class="ans"><input type="radio" name="q5" value="2" id="q5-a2"><label
+                                    for="q5-a2">&emsp;X</label></div>
+                            <!-- </form> -->
+                        </div>
+                        <img src="img/stonecatnone.png">
+                    </div>
+                </div>
+                <div class="q3 page6">
+                    <div class="q3-layout">
+                        <div class="qtitle">6.「萌獸學院」的教授中，原住民會將誰的羽毛作為飾品展示地位？</div>
+                        <!-- <form action="js/script.js" method="get"> -->
+                        <div class="ans-layout3">
+
+                            <div class="ans3"><input type="radio" name="q6" value="1" id="q6-a1">
+                                <label for="q6-a1">
+                                    <div>&emsp;赫頓</div><img src="img/赫氏角鷹final.png">
+                                </label></div>
+                            <div class="ans3"><input type="radio" name="q6" value="2" id="q6-a2">
+                                <label for="q6-a2">
+                                    <div>&emsp;黑歐鳳</div><img src="img/黑嘴端鳳頭燕鷗final.png">
+                                </label></div>
+                            <div class="ans3"><input type="radio" name="q6" value="3" id="q6-a3">
+                                <label for="q6-a3">
+                                    <div>&emsp;伯蒂紅</div><img src="img/紅尾伯勞final.png">
+                                </label></div>
+                            <div class="ans3"><input type="radio" name="q6" value="4" id="q6-a4">
+                                <label for="q6-a4">
+                                    <div>&emsp;優諾呼</div><img src="img/草鴞final.png">
+                                </label></div>
+
+                        </div>
+                        <!-- </form> -->
+                    </div>
+
+                </div>
+                <div class="q4 page7">
+                    <div class="qtitle">7.許多紅尾伯勞會在哪個季節來到臺灣？</div>
+                    <div class="q4-layout">
+                        
+                        <div class="ans-layout4">
+                            <!-- <form action="js/script.js" method="get"> -->
+                            <div class="ans"><input type="radio" name="q7" value="1" id="q7-a1"><label
+                                    for="q7-a1">&emsp;春季</label></div>
+                            <div class="ans"><input type="radio" name="q7" value="2" id="q7-a2"><label
+                                    for="q7-a2">&emsp;夏季</label></div>
+                            <div class="ans"><input type="radio" name="q7" value="3" id="q7-a3"><label
+                                    for="q7-a3">&emsp;秋季</label></div>
+                            <div class="ans"><input type="radio" name="q7" value="4" id="q7-a4"><label
+                                    for="q7-a4">&emsp;冬季</label></div>
+                            <!-- </form> -->
+                        </div>
+                        <img src="img/紅尾伯勞單.png">
+                    </div>
+
+                    
+                </div>
+                <div class="q4 page8">
+                    <div class="qtitle">8.下列關於草鴞的敘述何者錯誤？</div>
+                    <div class="q4-layout">
+                        
+                        <div class="ans-layout4">
+                            <!-- <form action="js/script.js" method="get"> -->
+                            <div class="ans"><input type="radio" name="q8" value="1" id="q8-a1"><label
+                                    for="q8-a1">&emsp;在樹上築巢</label></div>
+                            <div class="ans"><input type="radio" name="q8" value="2" id="q8-a2"><label
+                                    for="q8-a2">&emsp;又名猴面鷹</label></div>
+                            <div class="ans"><input type="radio" name="q8" value="3" id="q8-a3"><label
+                                    for="q8-a3">&emsp;常在淺山地帶出沒</label></div>
+                            <div class="ans"><input type="radio" name="q8" value="4" id="q8-a4"><label
+                                    for="q8-a4">&emsp;是肉食性動物</label></div>
+                            <!-- </form> -->
+                        </div>
+                    <img src="img/草鴞單.png">    
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- <input type="text" class="nametext" placeholder="請輸入暱稱" id="name-field"> -->
+            <div class="submitbutton-layout page9">
+                <input type="text" class="nametext" placeholder="請輸入暱稱" id="name-field">
+                <!-- <input type="radio" class="submitbutton" value="交卷">交卷 -->
+                <!-- <input type="radio" class="submitbutton" name="q9" value="q9-a1" id="q9-a1"> -->
+                <div class="spinner" id="spinner"></div>
+                <button class="submitbutton" id="submitbutton" onclick="javascript:main();">交卷</button>
+                <!-- <input type="submit" class="submitbutton" id="submitbutton" value="交卷"> -->
+            </div>
+            <!-- ? -->
+            <input type="hidden" id="qr2">
+            <input type="hidden" id="qr3">
+            <input type="hidden" id="qr4">
+            <input type="hidden" id="qr5">
+            <!-- <h3>
+                八道題中您一共答對了<span id="right_number"></span>題
+                <br>
+                正確的題目有:<span id="right_question" style="color:red"></span>
+                <br>
+                錯誤的題目有:<span id="error_question" style="color:red"></span>
+            </h3> -->
+
+        </article>
+    </div>
+
+    <footer>
+        <div class="copyright">
+            路口文創工作室版權所有 &copy;2019<br>
+            本網站由 魏均如 陳鈺文製作
+        </div>
+    </footer>
+
+</body>
+
+</html>
