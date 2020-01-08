@@ -55,6 +55,7 @@ $(function(){
             scrollTop:0
         },333);
       });
+      if(window.screen.width>320){
       $(window).scroll(function() {
         if ( $(this).scrollTop() > 300 ){
           $('#gotop').fadeIn(222);
@@ -73,5 +74,8 @@ $(function(){
           $('.leavebutton').css('opacity','1').css('transition','.3s');
         }
       }).scroll();
-      
+      }
+      else{
+        $('#gotop').css('opacity','0');
+      }
 });
