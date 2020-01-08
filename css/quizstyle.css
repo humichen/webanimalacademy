@@ -245,6 +245,10 @@
           border-radius: 5px;
           font-size: 15px;
       }
+      #gotop{
+        right: 30px;
+        bottom: 120px;
+    }
   }
   @media(max-width:380px){
     .quiztitle{
@@ -266,6 +270,10 @@
         padding-bottom: 15px;
         width: 180px;
       }
+      #gotop{
+        right: 12px;
+        bottom: 20px;
+    }
   }
   @media(max-width:320px){
     .ranklist-layout{
