@@ -37,6 +37,8 @@
     align-items: center;
     border-radius:3px;
     margin-top: 8px;
+    opacity: 0;
+    transform: translate(0,-20%);
 }
 
 .header-layout{
@@ -49,6 +51,8 @@
 
 .column-header{
     margin-top: 80px;
+    opacity: 0;
+    transform: translate(0,-20%);
 }
 .column-header img{
     height: 40px;

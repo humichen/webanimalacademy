@@ -64,7 +64,42 @@
 .showword {
     position: relative;
 }
-  
+.img1{
+    opacity: 0;
+    transform: translate(-10%,-10%);
+}
+.img2{
+    opacity: 0;
+    transform: translate(-10%,-10%);
+}
+.img3{
+    opacity: 0;
+    transform: translate(-10%,-10%);
+}
+.img4{
+    opacity: 0;
+    transform: translate(-10%,-10%);
+}
+.img5{
+    opacity: 0;
+    transform: translate(-10%,-10%);
+}
+.img6{
+    opacity: 0;
+    transform: translate(-10%,-10%);
+}
+.img7{
+    opacity: 0;
+    transform: translate(-10%,-10%);
+}
+.img8{
+    opacity: 0;
+    transform: translate(-10%,-10%);
+}
+.img9{
+    opacity: 0;
+    transform: translate(-10%,-10%);
+}
 .image {
     display: block;
 }
