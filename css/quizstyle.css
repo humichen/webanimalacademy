@@ -246,14 +246,14 @@
           font-size: 15px;
       }
   }
-  @media(max-width:320px){
+  @media(max-width:380px){
     .quiztitle{
         font-size: 20px;
         margin-left: 13%;
         margin-top: 10px;
     }
     .ranklist-layout{
-        width: 95%;
+        width: 80%;
         margin-top: 10px;
     }
     .order{
@@ -266,4 +266,10 @@
         padding-bottom: 15px;
         width: 180px;
       }
+  }
+  @media(max-width:320px){
+    .ranklist-layout{
+        width: 95%;
+        margin-top: 10px;
+    }
   }
