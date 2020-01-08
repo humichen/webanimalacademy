@@ -335,6 +335,10 @@ height: 40px;
     .q4-layout img{
         width:45% ;
     }
+    .spinner{
+        right: 33.5%;
+        display: none;
+    }
   }
   @media(max-width:425px){
     .question-layout{
@@ -418,5 +422,10 @@ height: 40px;
         top: 6%;
         background: none;
         font-size: 12px;
+    }
+    .spinner{
+        right: 41.5%;
+        top: 3300px;
+        display: none;
     }
   }
