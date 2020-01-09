@@ -31,7 +31,7 @@ $(document).ready(function () {
       $messageList.html('');
       //MONITOR CHAT MESSAGE AND RENDER SCREEN
       querySnapshot.forEach(function(doc) {
-        let senderName = doc.data().senderName || "anonymous";
+        let senderName = doc.data().senderName || "noname";
         let message = doc.data().score;
         let messageItem = `
         <li class="message-item">
